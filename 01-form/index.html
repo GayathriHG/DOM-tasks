@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+<body class="bg-purple-800">
+
+  <!--Feedback form-->
+  <div class="bg-violet-200 max-w-2xl mx-auto px-4  rounded">
+    <h2 class="text-center mt-20 mb-5 pt-5 font-serif text-xl"> Feedback Form
+    </h2>
+    <form name="feedback">
+      <div class>
+        <!--username-->
+        <div>
+          <input type="text" name="fullName" placeholder="Name" id="fullName" required
+            class="w-full mb-4 rounded p-2 outline-none font-serif pl-4">
+        </div>
+        <!--user email-->
+        <div>
+          <input type="text" name="email" placeholder="Email" required
+            class="w-full mb-4 rounded p-2 outline-none font-serif pl-4">
+        </div>
+        <!--subjects-->
+        <div>
+
+          <input type="text" name="subject" placeholder="Subject" required
+            class="w-full mb-4 rounded p-2 outline-none font-serif pl-4">
+
+          <!--radio buttons-->
+        </div>
+        <div class="font-serif text-gray-500 mb-4 px-4" id="options">
+          <div class="m-1">
+
+            <input type="radio" name="type" id="Physics" required value="Physics">
+            <label for="Physics">Physics</label>
+          </div>
+          <div class="m-1">
+            <input type="radio" name="type" id="Chemistry" required value="Chemistry">
+            <label for="Chemistry">Chemistry</label>
+
+          </div>
+          <div class="m-1">
+            <input type="radio" name="type" id="Biology" required value="Biology"> <label for="Biology">Biology</label>
+          </div>
+          <div class="m-1">
+            <input type="radio" name="type" id="Mathematics" required value="Mathematics"> <label
+              for="Mathematics">Mathematics</label>
+          </div>
+          <div class="m-1">
+            <input type="radio" name="type" id="Computer Science" required value="Computer Science"> <label
+              for="Computer Science">Computer Science</label>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!--feedback message-->
+      <div>
+        <textarea placeholder="Enter your feedback briefly" required name="message"
+          class="w-full mb-4 rounded p-2 outline-none font-serif pl-4" rows="4"></textarea>
+      </div>
+      <!--submit button-->
+      <div>
+        <button
+          class="bg-purple-300 mb-4 w-full p-2 rounded hover:bg-purple-400 cursor-pointer font-serif text-xl">Submit</button>
+      </div>
+  </div>
+  </div>
+
+
+  </form>
+
+
+
+
+
+  <script src="./assets/main.js" type="module"></script>
+</body>
+
+</html>
